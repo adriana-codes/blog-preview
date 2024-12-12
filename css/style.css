@@ -1,3 +1,107 @@
+.wrapper {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+}
+
+body {
+  font-family: Figtree;
+  font-weight: 600;
+  font-size: 16px;
+  color: hsl(0, 0%, 42%);
+  background: hsl(47, 88%, 63%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  line-height: 1.1;
+}
+
+.blog-category,
+.blog-meta,
+.blog-title,
+.author-name {
+  color: hsl(0, 0%, 7%);
+}
+
+.blog-card {
+  max-width: 23em;
+  margin: 0 1.5rem;
+  background: hsl(0, 0%, 100%);
+  /*margin: 100px auto;
+  width: 23em;*/
+  padding: 1.5rem;
+  border: solid 1px;
+  border-color: hsl(0, 0%, 7%);
+  border-radius: 1rem;
+  box-shadow: 7px 7px 0px rgba(0, 0, 0, 1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.blog-card > * + * {
+  margin-top: 1rem;
+}
+
+.blog-card:hover {
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+}
+
+.blog-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+}
+
+.blog-category {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  background: hsl(47, 88%, 63%);
+  margin: 10px 6px;
+  border-radius: 4px;
+}
+
+.blog-meta {
+  font-size: 14px;
+}
+
+.blog-title {
+  font-weight: 800;
+  font-size: 25px;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog-title:hover {
+  cursor: pointer;
+  color: hsl(47, 88%, 63%);
+}
+
+.author-data {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.author-img {
+  width: 2.7rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
